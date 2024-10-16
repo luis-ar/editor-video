@@ -1,10 +1,10 @@
 import { Player } from "./player";
 import InfiniteViewer from "@interactify/infinite-viewer";
 import { useEffect, useRef, useState } from "react";
-import useStore from "../../store/store";
+import useStore from "@/store/use-store";
 import Selection from "@interactify/selection";
 import Moveable from "@interactify/moveable";
-import { getIdFromClassName } from "@/utils/scene";
+import { getIdFromClassName } from "./utils/scene";
 import StateManager from "@designcombo/state";
 import { EDIT_OBJECT, dispatch } from "@designcombo/events";
 import {
@@ -13,7 +13,7 @@ import {
   getSelectionByIds
 } from "./utils/target";
 
-import { getCurrentTime } from "@/utils/time";
+import { getCurrentTime } from "./utils/time";
 const size = {
   width: 1080,
   height: 1920
@@ -408,7 +408,7 @@ export default function Scene({
             }}
             onDragGroupEnd={() => {
               if (holdGroupPosition) {
-                const payload: Record<string, any> = {};
+                const payload: Record<string, Partial<any>> = {};
                 Object.keys(holdGroupPosition).forEach((id) => {
                   const left = holdGroupPosition![id].left;
                   const top = holdGroupPosition![id].top;

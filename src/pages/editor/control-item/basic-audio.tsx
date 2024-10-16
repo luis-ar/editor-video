@@ -30,6 +30,23 @@ const BasicAudio = ({ trackItem }: { trackItem: ITrackItem & IAudio }) => {
     });
   };
 
+  const handleChangeSpeed = (v: number) => {
+    dispatch(EDIT_OBJECT, {
+      payload: {
+        [trackItem.id]: {
+          playbackRate: v
+        }
+      }
+    });
+
+    setProperties((prev) => {
+      return {
+        ...prev,
+        playbackRate: v
+      };
+    });
+  };
+
   return (
     <div className="flex-1 flex flex-col">
       <div className="text-sm text-text-primary font-medium h-12  flex items-center px-4 flex-none">
@@ -41,7 +58,10 @@ const BasicAudio = ({ trackItem }: { trackItem: ITrackItem & IAudio }) => {
             onChange={(v: number) => handleChangeVolume(v)}
             value={properties.details.volume!}
           />
-          <Speed />
+          <Speed
+            value={properties.playbackRate!}
+            onChange={handleChangeSpeed}
+          />
         </div>
       </ScrollArea>
     </div>

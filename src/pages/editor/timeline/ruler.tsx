@@ -5,9 +5,9 @@ import {
   SECONDARY_FONT,
   SMALL_FONT_SIZE,
   TIMELINE_OFFSET_X
-} from "@/constants";
-import { formatTimelineUnit } from "@/utils/format";
-import useStore from "@/store/store";
+} from "../constants/constants";
+import { formatTimelineUnit } from "@/pages/editor/utils/format";
+import useStore from "@/store/use-store";
 
 interface RulerProps {
   height?: number;

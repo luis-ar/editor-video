@@ -7,10 +7,10 @@ import {
   TIMELINE_SCALE_CHANGED,
   dispatch
 } from "@designcombo/events";
-import { frameToTimeString, getCurrentTime, timeToString } from "@/utils/time";
-import useStore from "@/store/store";
+import { frameToTimeString, getCurrentTime, timeToString } from "../utils/time";
+import useStore from "@/store/use-store";
 import { SquareSplitHorizontal, Trash, ZoomIn, ZoomOut } from "lucide-react";
-import { getNextZoomLevel, getPreviousZoomLevel } from "@/utils/timeline";
+import { getNextZoomLevel, getPreviousZoomLevel } from "../utils/timeline";
 import { useCurrentPlayerFrame } from "@/hooks/use-current-frame";
 import {
   IconPlayerPauseFilled,

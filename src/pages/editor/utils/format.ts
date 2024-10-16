@@ -1,4 +1,4 @@
-import { PREVIEW_FRAME_WIDTH } from "@/constants";
+import { PREVIEW_FRAME_WIDTH } from "../constants/constants";
 
 /**
  * Converts raw timeline units to the readable format.

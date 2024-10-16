@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import captionsData from "./combo.json";
-import { getCaptionLines, getCaptions } from "@/utils/captions";
+import { getCaptionLines, getCaptions } from "../utils/captions";
 import { ADD_CAPTION, dispatch } from "@designcombo/events";
 import { loadFonts } from "../utils/fonts";
 // interface Job {

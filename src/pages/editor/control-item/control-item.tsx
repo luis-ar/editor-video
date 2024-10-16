@@ -18,7 +18,7 @@ import BasicText from "./basic-text";
 import BasicImage from "./basic-image";
 import BasicVideo from "./basic-video";
 import BasicAudio from "./basic-audio";
-import useStore from "@/store/store";
+import useStore from "@/store/use-store";
 
 const Container = ({ children }: { children: React.ReactNode }) => {
   const { activeToolboxItem, setActiveToolboxItem } = useLayoutStore();

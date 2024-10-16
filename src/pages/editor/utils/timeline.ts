@@ -1,7 +1,7 @@
-import { TIMELINE_ZOOM_LEVELS } from "@/constants/scale";
 import { findIndex } from "./search";
-import { FRAME_INTERVAL, PREVIEW_FRAME_WIDTH } from "@/constants";
+import { FRAME_INTERVAL, PREVIEW_FRAME_WIDTH } from "../constants/constants";
 import { ITimelineScaleState } from "@designcombo/types";
+import { TIMELINE_ZOOM_LEVELS } from "../constants/scale";
 
 export function getPreviousZoomLevel(
   currentZoom: ITimelineScaleState

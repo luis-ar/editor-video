@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Icons } from "@/components/shared/icons";
 import { Button } from "@/components/ui/button";
 import useLayoutStore from "@/store/use-layout-store";
-import useStore from "@/store/store";
+import useStore from "@/store/use-store";
 
 export default function ControlList() {
   const { activeIds, trackItemsMap } = useStore();

@@ -46,7 +46,7 @@ import {
   DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import useStore from "@/store/store";
+import useStore from "@/store/use-store";
 import { IDesign } from "@designcombo/types";
 import { generateId } from "@designcombo/timeline";
 const baseUrl = "https://renderer.designcombo.dev";

@@ -1,7 +1,7 @@
 import { useCurrentPlayerFrame } from "@/hooks/use-current-frame";
-import useStore from "@/store/store";
-import { timeMsToUnits, unitsToTimeMs } from "@designcombo/timeline";
+import useStore from "@/store/use-store";
 import { MouseEvent, TouchEvent, useEffect, useRef, useState } from "react";
+import { timeMsToUnits, unitsToTimeMs } from "../utils/timeline";
 
 const Playhead = ({ scrollLeft }: { scrollLeft: number }) => {
   const playheadRef = useRef<HTMLDivElement>(null);

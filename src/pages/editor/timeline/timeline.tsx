@@ -12,7 +12,7 @@ import {
   filter,
   subject
 } from "@designcombo/events";
-import useStore from "@/store/store";
+import useStore from "@/store/use-store";
 import { handleEvents } from "@designcombo/timeline";
 import Playhead from "./playhead";
 import { useCurrentPlayerFrame } from "@/hooks/use-current-frame";

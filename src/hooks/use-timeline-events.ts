@@ -1,4 +1,4 @@
-import useStore from "@/store/store";
+import useStore from "@/store/use-store";
 import { useEffect } from "react";
 import {
   LAYER_PREFIX,

@@ -10,7 +10,7 @@ export const Texts = () => {
         id: generateId(),
         display: {
           from: 0,
-          to: 1000
+          to: 5000
         },
         details: {
           text: "Heading and some body",

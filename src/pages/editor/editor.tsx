@@ -1,5 +1,5 @@
 import Timeline from "./timeline";
-import useStore from "../../store/store";
+import useStore from "../../store/use-store";
 import Navbar from "./navbar";
 import MenuList from "./menu-list";
 import { MenuItem } from "./menu-item";

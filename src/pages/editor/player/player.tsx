@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import Composition from "./composition";
 import { Player as RemotionPlayer, PlayerRef } from "@remotion/player";
-import useStore from "@/store/store";
+import useStore from "@/store/use-store";
 
 const Player = () => {
   const playerRef = useRef<PlayerRef>(null);
