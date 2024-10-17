@@ -9,17 +9,17 @@ importers:
   .:
     dependencies:
       '@designcombo/events':
-        specifier: 0.1.15
-        version: 0.1.15
+        specifier: 0.1.18
+        version: 0.1.18
       '@designcombo/state':
-        specifier: 0.1.15
-        version: 0.1.15(@designcombo/events@0.1.15)(@designcombo/types@0.1.15)
+        specifier: 0.1.18
+        version: 0.1.18(@designcombo/events@0.1.18)(@designcombo/types@0.1.18)
       '@designcombo/timeline':
-        specifier: 0.1.15
-        version: 0.1.15(@designcombo/events@0.1.15)(@designcombo/types@0.1.15)(@types/lodash-es@4.17.12)
+        specifier: 0.1.18
+        version: 0.1.18(@designcombo/events@0.1.18)(@designcombo/types@0.1.18)(@types/lodash-es@4.17.12)
       '@designcombo/types':
-        specifier: 0.1.15
-        version: 0.1.15
+        specifier: 0.1.18
+        version: 0.1.18
       '@emotion/react':
         specifier: ^11.13.3
         version: 11.13.3(@types/react@18.3.8)(react@18.3.1)
@@ -306,24 +306,24 @@ packages:
   '@daybrush/utils@1.13.0':
     resolution: {integrity: sha512-ALK12C6SQNNHw1enXK+UO8bdyQ+jaWNQ1Af7Z3FNxeAwjYhQT7do+TRE4RASAJ3ObaS2+TJ7TXR3oz2Gzbw0PQ==}
 
-  '@designcombo/events@0.1.15':
-    resolution: {integrity: sha512-aUhLAQRfDYDXBEr5nIak4kfDoJ+G2/1wSkgqxV2prOien44vwU8tydZOSu61ab5pqv1ibRDw5RGqBW0YUFQ4SA==}
+  '@designcombo/events@0.1.18':
+    resolution: {integrity: sha512-JzY+nuW7VapZLS+81MNbrqjBg/qptiZz9tZlYiKUPG0qqH4VoqiC7Nuc0OyLcNaS3ctyAfej6ow8kKelsCYPPQ==}
 
-  '@designcombo/state@0.1.15':
-    resolution: {integrity: sha512-koMr2ge6fff7sv1s3Qfzk06fA5SvWD99fkMM03FWZH26bmOCRwmBlGpwYsKiXVzZRlcl9FrA5jnvX5gabMuXrA==}
+  '@designcombo/state@0.1.18':
+    resolution: {integrity: sha512-lv6Gi2/89X+FqHnH3oD+7UPp3wNDL94oGwwBkmT2NSjlvFFLwDs54hbBKe+kjgSU1WwOsBxWW0pT0w8G/w+AJA==}
     peerDependencies:
-      '@designcombo/events': 0.1.15
-      '@designcombo/types': 0.1.15
+      '@designcombo/events': 0.1.18
+      '@designcombo/types': 0.1.18
 
-  '@designcombo/timeline@0.1.15':
-    resolution: {integrity: sha512-85GF9ihj220Q7/vNsK1fI8dh21LtMcZKBSBJLYQJ3HNvKPlsw//ce8CSNXWBtFYgQKk2/A+c3uAOpfL8dxB5eQ==}
+  '@designcombo/timeline@0.1.18':
+    resolution: {integrity: sha512-hfoH/FjvbCSO1d7mmfwv+okyk1DROfnzgOWbbtmzvoXoZ+nkUERlmwKunvdEwQEBWYDOunTR5QPLYMiW7+UDxg==}
     peerDependencies:
-      '@designcombo/events': 0.1.15
-      '@designcombo/types': 0.1.15
+      '@designcombo/events': 0.1.18
+      '@designcombo/types': 0.1.18
       '@types/lodash-es': ^4.17.12
 
-  '@designcombo/types@0.1.15':
-    resolution: {integrity: sha512-Iyy41Eyu6bLyD37EJN4OhNh+Iw0X62Q2+nM0xiQI0akPtiNShn46VelO7gZqeQ1DG2aKsM0DphiTH+qFBmG9Mg==}
+  '@designcombo/types@0.1.18':
+    resolution: {integrity: sha512-X/dENonH0+Z2sBvQ2X1tpHDxw0yvKrq4t2fDGb/lqMu4DbFL5Dfmo3y2OPP3+JgobLrKdFQNkLik826/A0/wdg==}
 
   '@egjs/agent@2.4.4':
     resolution: {integrity: sha512-cvAPSlUILhBBOakn2krdPnOGv5hAZq92f1YHxYcfu0p7uarix2C6Ia3AVizpS1SGRZGiEkIS5E+IVTLg1I2Iog==}
@@ -2908,14 +2908,14 @@ snapshots:
 
   '@daybrush/utils@1.13.0': {}
 
-  '@designcombo/events@0.1.15':
+  '@designcombo/events@0.1.18':
     dependencies:
       rxjs: 7.8.1
 
-  '@designcombo/state@0.1.15(@designcombo/events@0.1.15)(@designcombo/types@0.1.15)':
+  '@designcombo/state@0.1.18(@designcombo/events@0.1.18)(@designcombo/types@0.1.18)':
     dependencies:
-      '@designcombo/events': 0.1.15
-      '@designcombo/types': 0.1.15
+      '@designcombo/events': 0.1.18
+      '@designcombo/types': 0.1.18
       immer: 10.1.1
       lodash.clonedeep: 4.5.0
       lodash.isequal: 4.5.0
@@ -2924,10 +2924,10 @@ snapshots:
       nanoid: 5.0.7
       rxjs: 7.8.1
 
-  '@designcombo/timeline@0.1.15(@designcombo/events@0.1.15)(@designcombo/types@0.1.15)(@types/lodash-es@4.17.12)':
+  '@designcombo/timeline@0.1.18(@designcombo/events@0.1.18)(@designcombo/types@0.1.18)(@types/lodash-es@4.17.12)':
     dependencies:
-      '@designcombo/events': 0.1.15
-      '@designcombo/types': 0.1.15
+      '@designcombo/events': 0.1.18
+      '@designcombo/types': 0.1.18
       '@types/lodash-es': 4.17.12
       es-toolkit: 1.25.1
       fabric: 6.4.3
@@ -2941,7 +2941,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@designcombo/types@0.1.15':
+  '@designcombo/types@0.1.18':
     dependencies:
       rxjs: 7.8.1
 

@@ -40,7 +40,7 @@ import {
   Zap,
   Music,
   VideoIcon,
-  Captions
+  Captions,
 } from "lucide-react";
 
 export type Icon = LucideIcon;
@@ -56,6 +56,7 @@ export const Icons = {
   chevronLeft: ChevronLeft,
   chevronRight: ChevronRight,
   check: Check,
+  caption: Captions,
   close: X,
   copy: Copy,
   dashboard: LayoutPanelLeft,
@@ -250,5 +251,5 @@ export const Icons = {
   ),
   user: User,
   video: VideoIcon,
-  warning: AlertTriangle
+  warning: AlertTriangle,
 };

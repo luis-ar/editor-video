@@ -75,7 +75,14 @@ function ControlMenu({ controlType }: { controlType: ItemType }) {
               type={controlType}
               openToolboxItem={openToolboxItem}
             />
-          )
+          ),
+          caption: (
+            <CaptionMenuList
+              activeToolboxItem={activeToolboxItem!}
+              type={controlType}
+              openToolboxItem={openToolboxItem}
+            />
+          ),
         }[controlType as "image"]
       }
     </div>
@@ -85,7 +92,7 @@ function ControlMenu({ controlType }: { controlType: ItemType }) {
 const ImageMenuList = ({
   openToolboxItem,
   type,
-  activeToolboxItem
+  activeToolboxItem,
 }: {
   openToolboxItem: (type: string) => void;
   type: ItemType;
@@ -110,10 +117,40 @@ const ImageMenuList = ({
   );
 };
 
+const CaptionMenuList = ({
+  openToolboxItem,
+  type,
+  activeToolboxItem,
+}: {
+  openToolboxItem: (type: string) => void;
+  type: ItemType;
+  activeToolboxItem: string;
+}) => {
+  return (
+    <div className="flex flex-col items-center">
+      <PresetsMenuListItem
+        activeToolboxItem={activeToolboxItem}
+        type={type}
+        openToolboxItem={openToolboxItem}
+      />
+      <BasicMenuListItem
+        activeToolboxItem={activeToolboxItem}
+        openToolboxItem={openToolboxItem}
+        type={type}
+      />
+
+      <SmartMenuListItem
+        activeToolboxItem={activeToolboxItem}
+        openToolboxItem={openToolboxItem}
+      />
+    </div>
+  );
+};
+
 const TextMenuList = ({
   openToolboxItem,
   type,
-  activeToolboxItem
+  activeToolboxItem,
 }: {
   openToolboxItem: (type: string) => void;
   type: ItemType;
@@ -146,7 +183,7 @@ const TextMenuList = ({
 const VideoMenuList = ({
   openToolboxItem,
   type,
-  activeToolboxItem
+  activeToolboxItem,
 }: {
   openToolboxItem: (type: string) => void;
   type: ItemType;
@@ -170,7 +207,7 @@ const VideoMenuList = ({
 const AudioMenuList = ({
   openToolboxItem,
   type,
-  activeToolboxItem
+  activeToolboxItem,
 }: {
   openToolboxItem: (type: string) => void;
   type: ItemType;
@@ -194,7 +231,7 @@ const AudioMenuList = ({
 const PresetsMenuListItem = ({
   openToolboxItem,
   type,
-  activeToolboxItem
+  activeToolboxItem,
 }: {
   openToolboxItem: (type: string) => void;
   type: ItemType;
@@ -217,7 +254,7 @@ const PresetsMenuListItem = ({
 const BasicMenuListItem = ({
   openToolboxItem,
   type,
-  activeToolboxItem
+  activeToolboxItem,
 }: {
   openToolboxItem: (type: string) => void;
   type: string;
@@ -240,7 +277,7 @@ const BasicMenuListItem = ({
 
 const SmartMenuListItem = ({
   openToolboxItem,
-  activeToolboxItem
+  activeToolboxItem,
 }: {
   openToolboxItem: (type: string) => void;
   activeToolboxItem: string;
@@ -259,7 +296,7 @@ const SmartMenuListItem = ({
 
 const AnimationMenuListItem = ({
   openToolboxItem,
-  activeToolboxItem
+  activeToolboxItem,
 }: {
   openToolboxItem: (type: string) => void;
   activeToolboxItem: string;

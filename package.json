@@ -10,10 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@designcombo/events": "0.1.15",
-    "@designcombo/state": "0.1.15",
-    "@designcombo/timeline": "0.1.15",
-    "@designcombo/types": "0.1.15",
+    "@designcombo/events": "0.1.18",
+    "@designcombo/state": "0.1.18",
+    "@designcombo/timeline": "0.1.18",
+    "@designcombo/types": "0.1.18",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@hookform/resolvers": "^3.4.2",

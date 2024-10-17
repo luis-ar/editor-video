@@ -2,11 +2,12 @@ import React from "react";
 import useLayoutStore from "@/store/use-layout-store";
 import {
   IAudio,
+  ICaption,
   IImage,
   IText,
   ITrackItem,
   ITrackItemAndDetails,
-  IVideo
+  IVideo,
 } from "@designcombo/types";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -19,6 +20,7 @@ import BasicImage from "./basic-image";
 import BasicVideo from "./basic-video";
 import BasicAudio from "./basic-audio";
 import useStore from "@/store/use-store";
+import BasicCaption from "./basic-caption";
 
 const Container = ({ children }: { children: React.ReactNode }) => {
   const { activeToolboxItem, setActiveToolboxItem } = useLayoutStore();
@@ -32,7 +34,7 @@ const Container = ({ children }: { children: React.ReactNode }) => {
       const trackItemDetails = trackItemDetailsMap[id];
       const trackItem = {
         ...trackItemsMap[id],
-        details: trackItemDetails?.details || {}
+        details: trackItemDetails?.details || {},
       };
       setTrackItem(trackItem);
     } else {
@@ -58,7 +60,7 @@ const Container = ({ children }: { children: React.ReactNode }) => {
       style={{
         right: activeToolboxItem && displayToolbox ? "0" : "-100%",
         transition: "right 0.25s ease-in-out",
-        zIndex: 200
+        zIndex: 200,
       }}
       className="w-[340px] h-[calc(100%-32px-64px)] mt-6 absolute top-1/2 -translate-y-1/2 rounded-lg shadow-lg flex"
     >
@@ -78,7 +80,7 @@ const Container = ({ children }: { children: React.ReactNode }) => {
         </Button>
         {React.cloneElement(children as React.ReactElement<any>, {
           trackItem,
-          activeToolboxItem
+          activeToolboxItem,
         })}
       </div>
       <div className="w-[74px]"></div>
@@ -88,7 +90,7 @@ const Container = ({ children }: { children: React.ReactNode }) => {
 
 const ActiveControlItem = ({
   trackItem,
-  activeToolboxItem
+  activeToolboxItem,
 }: {
   trackItem?: ITrackItemAndDetails;
   activeToolboxItem?: string;
@@ -109,12 +111,14 @@ const ActiveControlItem = ({
           "basic-video": (
             <BasicVideo trackItem={trackItem as ITrackItem & IVideo} />
           ),
+          "basic-caption": <BasicCaption trackItem={trackItem as ICaption} />,
           "basic-audio": (
             <BasicAudio trackItem={trackItem as ITrackItem & IAudio} />
           ),
           "preset-text": <Presets />,
+          "preset-caption": <Presets />,
           animation: <Animations />,
-          smart: <Smart />
+          smart: <Smart />,
         }[activeToolboxItem]
       }
     </>
