@@ -4,7 +4,7 @@ class Image extends ImageBase {
   static type = "Image";
   constructor(props: ImageProps) {
     super(props);
-    // this.fill = "#2563eb";
+    this.fill = "#ff8c00";
   }
 
   public _render(ctx: CanvasRenderingContext2D) {

@@ -4,7 +4,7 @@ class Video extends VideoBase {
   static type = "Video";
   constructor(props: VideoProps) {
     super(props);
-    // this.fill = "#2563eb";
+    this.fill = "#ff8c00";
   }
 
   public _render(ctx: CanvasRenderingContext2D) {

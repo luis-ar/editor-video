@@ -4,7 +4,7 @@ class Audio extends AudioBase {
   static type = "Audio";
   constructor(props: AudioProps) {
     super(props);
-    // this.fill = "#2563eb";
+    this.fill = "#ff8c00";
   }
 
   public _render(ctx: CanvasRenderingContext2D) {

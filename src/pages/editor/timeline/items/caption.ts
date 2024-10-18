@@ -4,7 +4,7 @@ class Caption extends CaptionBase {
   static type = "Caption";
   constructor(props: CaptionsProps) {
     super(props);
-    this.fill = "#303030";
+    this.fill = "#ff8c00";
   }
 
   public _render(ctx: CanvasRenderingContext2D) {
