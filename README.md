@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/cc02f48b-4021-4911-aad0-79f02d8f74c1)
+![image](https://github.com/user-attachments/assets/06c8b50a-71dc-4e5c-84cf-19b2b0e783c8)
+
 
 # Editor de video de React
 Video Editor application using React and TypeScript.
@@ -6,8 +7,8 @@ Video Editor application using React and TypeScript.
 [Wombo](https://github.com/lh-sn/react-video-editor "Wombo") · [Discord](https://discord.gg/jrZs3wZyM5 "Discord") · [X](https://github.com/lh-sn/react-video-editor "X")
 
 
+![image](https://github.com/user-attachments/assets/70404352-ebd4-4d16-b1d7-c4295d2673fc)
 
-![image](https://github.com/user-attachments/assets/dadb7a15-558e-4309-bca9-ad6dcf039111)
 
 
 
