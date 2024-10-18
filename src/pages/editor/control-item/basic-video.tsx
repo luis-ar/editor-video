@@ -10,8 +10,6 @@ import { Crop } from "lucide-react";
 import Volume from "./common/volume";
 import { useEffect, useState } from "react";
 import { EDIT_OBJECT, dispatch } from "@designcombo/events";
-import Flip from "./common/flip";
-import PlaybackRate from "./common/playback-rate";
 import Speed from "./common/speed";
 
 const BasicVideo = ({ trackItem }: { trackItem: ITrackItem & IVideo }) => {
@@ -22,10 +20,10 @@ const BasicVideo = ({ trackItem }: { trackItem: ITrackItem & IVideo }) => {
       payload: {
         [trackItem.id]: {
           details: {
-            volume: v
-          }
-        }
-      }
+            volume: v,
+          },
+        },
+      },
     });
 
     setProperties((prev) => {
@@ -33,8 +31,8 @@ const BasicVideo = ({ trackItem }: { trackItem: ITrackItem & IVideo }) => {
         ...prev,
         details: {
           ...prev.details,
-          volume: v
-        }
+          volume: v,
+        },
       };
     });
   };
@@ -44,18 +42,18 @@ const BasicVideo = ({ trackItem }: { trackItem: ITrackItem & IVideo }) => {
       payload: {
         [trackItem.id]: {
           details: {
-            borderWidth: v
-          }
-        }
-      }
+            borderWidth: v,
+          },
+        },
+      },
     });
     setProperties((prev) => {
       return {
         ...prev,
         details: {
           ...prev.details,
-          borderWidth: v
-        }
+          borderWidth: v,
+        },
       };
     });
   };
@@ -65,18 +63,18 @@ const BasicVideo = ({ trackItem }: { trackItem: ITrackItem & IVideo }) => {
       payload: {
         [trackItem.id]: {
           details: {
-            borderColor: v
-          }
-        }
-      }
+            borderColor: v,
+          },
+        },
+      },
     });
     setProperties((prev) => {
       return {
         ...prev,
         details: {
           ...prev.details,
-          borderColor: v
-        }
+          borderColor: v,
+        },
       };
     });
   };
@@ -86,18 +84,18 @@ const BasicVideo = ({ trackItem }: { trackItem: ITrackItem & IVideo }) => {
       payload: {
         [trackItem.id]: {
           details: {
-            opacity: v
-          }
-        }
-      }
+            opacity: v,
+          },
+        },
+      },
     });
     setProperties((prev) => {
       return {
         ...prev,
         details: {
           ...prev.details,
-          opacity: v
-        }
+          opacity: v,
+        },
       };
     });
   };
@@ -107,18 +105,18 @@ const BasicVideo = ({ trackItem }: { trackItem: ITrackItem & IVideo }) => {
       payload: {
         [trackItem.id]: {
           details: {
-            borderRadius: v
-          }
-        }
-      }
+            borderRadius: v,
+          },
+        },
+      },
     });
     setProperties((prev) => {
       return {
         ...prev,
         details: {
           ...prev.details,
-          borderRadius: v
-        }
+          borderRadius: v,
+        },
       };
     });
   };
@@ -128,10 +126,10 @@ const BasicVideo = ({ trackItem }: { trackItem: ITrackItem & IVideo }) => {
       payload: {
         [trackItem.id]: {
           details: {
-            boxShadow: boxShadow
-          }
-        }
-      }
+            boxShadow: boxShadow,
+          },
+        },
+      },
     });
 
     setProperties((prev) => {
@@ -139,8 +137,8 @@ const BasicVideo = ({ trackItem }: { trackItem: ITrackItem & IVideo }) => {
         ...prev,
         details: {
           ...prev.details,
-          boxShadow
-        }
+          boxShadow,
+        },
       };
     });
   };
@@ -152,15 +150,15 @@ const BasicVideo = ({ trackItem }: { trackItem: ITrackItem & IVideo }) => {
     dispatch(EDIT_OBJECT, {
       payload: {
         [trackItem.id]: {
-          playbackRate: v
-        }
-      }
+          playbackRate: v,
+        },
+      },
     });
 
     setProperties((prev) => {
       return {
         ...prev,
-        playbackRate: v
+        playbackRate: v,
       };
     });
   };

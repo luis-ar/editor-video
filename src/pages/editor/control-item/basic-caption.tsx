@@ -16,7 +16,7 @@ import Opacity from "./common/opacity";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { AlignCenter, AlignLeft, AlignRight } from "lucide-react";
 import { Input } from "@/components/ui/input";
-import { IBoxShadow, ICaption, IText, ITrackItem } from "@designcombo/types";
+import { IBoxShadow, ICaption } from "@designcombo/types";
 import { Label } from "@/components/ui/label";
 import Outline from "./common/outline";
 import Shadow from "./common/shadow";
