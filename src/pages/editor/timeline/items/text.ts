@@ -4,7 +4,7 @@ class Text extends TextBase {
   static type = "Text";
   constructor(props: TextProps) {
     super(props);
-    this.fill = "#303030";
+    this.fill = "#ff8c00";
   }
 
   public _render(ctx: CanvasRenderingContext2D) {
