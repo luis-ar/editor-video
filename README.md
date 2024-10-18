@@ -21,13 +21,13 @@ Video Editor application using React and TypeScript.
 ## ⌨️ Desarrollo
 Clonar localmente:
 
-       $ git clone git@github.com:luis-ar/video-editor.git
-        $ cd video-editor
+       $ git clone git@github.com:luis-ar/editor-video.git
+        $ cd editor-video
         $ pnpm install
         $ pnpm dev
 		
 
-Abra su navegador y visite http://127.0.0.1:8001 , vea más en [Desarrollo](https://github.com/luis-ar/video-editor.git "Desarrollo") .
+Abra su navegador y visite http://127.0.0.1:8001 , vea más en [Desarrollo](https://github.com/luis-ar/editor-video.git "Desarrollo") .
 
 ## 📝 Licencia
 Derechos de autor © 2023 [DesignCombo](https://github.com/designcombo/react-video-editor?tab=readme-ov-file "DesignCombo") .
