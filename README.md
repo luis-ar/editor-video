@@ -27,7 +27,7 @@ Clonar localmente:
         $ pnpm dev
 		
 
-Abra su navegador y visite http://127.0.0.1:8001 , vea más en [Desarrollo](https://github.com/luis-ar/editor-video.git "Desarrollo") .
+Abra su navegador y visite http://localhost:5173 , vea más en [Desarrollo](https://github.com/luis-ar/editor-video.git "Desarrollo") .
 
 ## 📝 Licencia
 Derechos de autor © 2023 [DesignCombo](https://github.com/designcombo/react-video-editor?tab=readme-ov-file "DesignCombo") .
